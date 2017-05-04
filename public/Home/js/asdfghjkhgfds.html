@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">*{padding: 0; margin: 0;}
+#ulList{
+
+    background: #ddd;
+    list-style: none;
+}
+#ulList li{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 16px;
+    background:#ddd;
+    border-right: 1px solid orange;
+    cursor: pointer;
+}
+#ulList li:hover{background-color: orange;}
+.tabcontent{
+    width:318px;
+    height: 100px;
+    background: orange;
+}
+#c1,#c2,#c3{
+    display: none;
+}</style>>
+    <link type="text/css" rel="stylesheet" href="tab.css">
+    <script src="jquery-1.8.3.js"></script>
+    <script>
+        $(document).ready(function(){
+           // alert("加载完毕！")
+            $("#ulList li").click(function(){
+                var UliArry=$("ulList li");//获取ulList下所有的li元素集合
+                var DivArry=$(".tabcontent div");//获取tabcontent下所有的div元素
+              //  alert(DivArry.length);
+                var count=$(this).index();//获取li元素的索引
+                DivArry.eq(count).css("display","block").siblings().css("display","none");
+                //alert(count);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+       <div class="header"><h2>选项卡</h2></div>
+       <div class="tab">
+
+           <ul id="ulList">
+               <li id="lia">选项卡1</li>
+               <li id="lib">选项卡2</li>
+               <li id="lic">选项卡3</li>
+           </ul>
+       </div>
+       <div class="tabcontent">
+           <div id="c1">选项卡内容1</div>
+           <div id="c2">选项卡内容2</div>
+           <div id="c3">选项卡内容3</div>
+       </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿/*
+Powered by uimix.com;
+date:2015-10-01;
+*/
+
+
+/*--------main---------*/
+/*<!--[if lte IE 7]>*/
+.vivo-h-nav li{display: inline; zoom:1; width: auto; float: left;}
+.vc-main-promos ul li{display: inline; zoom:1; width: 33.33333%;}
+
+
+#vivo-head-wrap{background: #fff;}
+/*b.v-gb-ico{background-image: url(../images/vivo-gb-ico_1.png); background-size: 600px 400px; background-repeat: no-repeat; display: inline-block; overflow: hidden; vertical-align: middle; position: relative; }*/
+#vivo-wrap #vivo-head-wrap .nav-tool a.nav-t-kefu{display: inline-block;}
+#vivo-wrap #vivo-head-wrap .nav-tool a.nav-t-search{display: inline-block;}
+#vivo-wrap #vivo-head-wrap .nav-tool a.nav-t-user{display: inline-block;}
+#vivo-wrap #vivo-head-wrap .nav-tool a.nav-t-user{display: inline-block;}
+
+
+
+
+/*<![endif]-->*/
+/*--------main---------*/

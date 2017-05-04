@@ -1,0 +1,12 @@
+﻿@charset "utf-8";
+
+#tags {
+	overflow:hidden;
+	zoom:1;
+}
+#tags li.show {
+	color:#000;
+	background:#ccc;
+}
+#table ul {
+	display:none;

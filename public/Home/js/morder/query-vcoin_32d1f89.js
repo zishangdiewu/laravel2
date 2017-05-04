@@ -1,0 +1,1 @@
+$(function(){var n=$(".member-vcoin-number"),e=$(".my-vcoin-number");n.size()>0&&$.ajax({url:webCtx+"/my/queryVCoin",type:"POST",data:"json",success:function(i){null!=i.vCoin&&(n.text(i.vCoin),e.size()>0&&e.text(i.vCoin))}})});

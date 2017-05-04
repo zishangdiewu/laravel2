@@ -1,0 +1,92 @@
+﻿/*
+Powered by uimix.com;
+date:2015-10-01;
+*/
+
+#chrmas{display: none;}
+.chr-b{display: none;}
+
+
+/*--------main---------*/
+
+
+
+/*contain*/
+.vc-main-promos{width: 100%; position: relative; overflow: hidden; margin: auto;}
+.vc-main-promos ul{width: 100%; display: table; height: 100%;}
+.vc-main-promos ul li{display: table-cell; position: relative; width: 1%; height: 480px; box-sizing: content-box; overflow: hidden;}
+.vc-main-promos ul li{display: table-cell; position: relative; width: 1%; height: 480px; box-sizing: content-box; overflow: hidden; background-color: #008cd6;}
+.vc-main-promos ul li a{display: block; position: relative; height: 100%; overflow: hidden; width: 100%;}
+.vc-main-promos ul li a i{display: block; position: absolute; height: 100%; width: 2000px; left: 50%; margin-left: -1000px; text-align: center; z-index: 1;}
+.vc-main-promos ul li a i img{height: 100% !important;}
+.vc-main-promos ul li a .title{width: 100%; position: absolute; z-index: 2; text-align: center; left: 0; bottom: 60px; color: #fff;}
+.vc-main-promos ul li a .title h2{line-height: 1em; font-size: 18px; padding-bottom: 5px;}
+.vc-main-promos ul li a .title h3{line-height: 1em; font-size: 14px;}
+.vc-main-promos ul li a .title.color-black{color: #333;}
+.vc-main-promos ul li a .title.color-black h3{color: #999;}
+.vc-main-promos ul li a .title.color-white{color: #fff;}
+.vc-main-promos ul li a .title.color-white h3{color: #fff;}
+.vc-main-promos ul li.vc-p-video a:after{width: 80px; height: 80px; content: ""; overflow: hidden; position: absolute; top: 50%; left: 50%; margin: -40px 0 0 -40px; background-position: -520px 0; z-index: 9;}
+.vc-main-promos ul li.vc-p-video a:hover:after{background-position: -420px 0;}
+
+
+.vc-main-events{width: 1400px; margin: auto; margin-top: 100px; position: relative;}
+.vc-main-events h2{font-size: 24px; line-height: 1em; font-weight: bold; color: #333; display: inline-block; vertical-align: middle;}
+.vc-main-events .event-morelink{display: inline-block; padding: .5em 1em; color: #999; border-radius: 50px;border: 1px #999 solid;text-align: center;box-sizing: border-box; font-size: 12px;  -webkit-transition: all .3s cubic-bezier(.73, .03, .31, 1);  -moz-transition: all .3s cubic-bezier(.73, .03, .31, 1);  transition: all .3s cubic-bezier(.73, .03, .31, 1); margin-left: 15px;}
+.vc-main-events .event-morelink:hover{color: #008cd6; border-color: #008cd6;}
+.vc-main-events .event-morelink:after{width: 4px; height: 8px; background-position: -583px -125px; vertical-align: 0; margin-left: 5px;}
+.vc-main-events .event-morelink:hover:after{ background-position: -583px -137px; -webkit-animation:gogogo2 1.2s infinite ease; -moz-animation:gogogo2 1.2s infinite ease; animation:gogogo2 1.2s infinite ease;}
+.vc-main-events ul{display: block; position: relative; margin: 0 -5px; margin-top: 40px;}
+.vc-main-events ul li{display: block; position: relative; width: 25%; float: left;}
+.vc-main-events ul li a{display: block; height: 100%; margin: 0 5px; overflow: hidden; }
+.vc-main-events ul li strong{display: block; margin: 0 5px; font-size: 14px; color: #999; padding-top: 1em; margin-top: 1em; position: relative;}
+.vc-main-events ul li strong:after{content: ''; width: 20px; height: 1px; overflow: hidden; position: absolute; top: 0; left: 0; background-color: #ccc;}
+.vc-main-events.vc-ev-pic ul li a .figure{width: 100%; height: auto; margin-bottom: 15px;}
+.vc-main-events.vc-ev-pic ul li a .figure img{width: 100% !important; height: auto !important;}
+.vc-main-events.vc-ev-pic ul li a h3{font-size: 16px; color: #000; line-height: 1.8em; white-space: nowrap; overflow: hidden; width: 90%; text-overflow: ellipsis;  -webkit-transition: color .3s cubic-bezier(.73, .03, .31, 1); -moz-transition: color .3s cubic-bezier(.73, .03, .31, 1); transition: color .3s cubic-bezier(.73, .03, .31, 1);}
+.vc-main-events.vc-ev-pic ul li a p{font-size: 14px; color: #666; line-height: 1em;  white-space: nowrap; overflow: hidden; width: 90%; text-overflow: ellipsis;   -webkit-transition: color .3s cubic-bezier(.73, .03, .31, 1); -moz-transition: color .3s cubic-bezier(.73, .03, .31, 1); transition: color .3s cubic-bezier(.73, .03, .31, 1);}
+.vc-main-events.vc-ev-pic ul li a:hover h3{color: #008cd6;}
+.vc-main-events.vc-ev-pic ul li a:hover p{color: #008cd6;}
+.vc-main-events.vc-ev-text ul{height: 100px; margin-left: -40px; margin-right: -40px;}
+.vc-main-events.vc-ev-text ul li{width: 33%; height: 100%;}
+.vc-main-events.vc-ev-text ul li .info{width: 100px; height: 100%; position: absolute;}
+.vc-main-events.vc-ev-text ul li .int{display: block; margin-left: 120px; height: 100%;}
+.vc-main-events.vc-ev-text ul li a{margin: 0 40px;}
+.vc-main-events.vc-ev-text ul li a h3{font-size: 16px; color: #000; display: inline-block; line-height: 1.4em; margin-bottom: .5em;  white-space: nowrap; overflow: hidden; width: 90%; text-overflow: ellipsis;  -webkit-transition: color .3s cubic-bezier(.73, .03, .31, 1); -moz-transition: color .3s cubic-bezier(.73, .03, .31, 1); transition: color .3s cubic-bezier(.73, .03, .31, 1);}
+.vc-main-events.vc-ev-text ul li a h3 em{display: inline-block; padding: .5em; line-height: 1em; border-radius: 5px; font-size: 12px; color: #fff; background: #008cd6; margin-right: 5px;}
+.vc-main-events.vc-ev-text ul li a p{font-size: 14px; color: #666; height: 3em; line-height: 1.5em; margin-bottom: .6em; padding-right: 3em; overflow: hidden; width: 90%;  -webkit-transition: color .3s cubic-bezier(.73, .03, .31, 1); -moz-transition: color .3s cubic-bezier(.73, .03, .31, 1); transition: color .3s cubic-bezier(.73, .03, .31, 1);}
+.vc-main-events.vc-ev-text ul li a span{font-size: 12px; color: #999; position: absolute; bottom: 0;}
+.vc-main-events.vc-ev-text ul li a:hover h3{color: #008cd6;}
+.vc-main-events.vc-ev-text ul li a:hover h2{color: #008cd6;}
+.vc-main-events.vc-ev-text ul li a:hover p{color: #008cd6;}
+.vc-main-events.vc-ev-text ul li a:hover span{color: #999;}
+.vc-main-events.vc-ev-text ul li.vc-ev-photos dl{width: 272px;}
+.vc-main-events.vc-ev-text ul li.vc-ev-photos dd{width: 25%; height: auto; float: left;}
+.vc-main-events.vc-ev-text ul li.vc-ev-photos dd a{display: block; margin: 0; height: 68px; text-align: center; background-color: #eee;}
+.vc-main-events.vc-ev-text ul li.vc-ev-photos dd a p{font-size: 12px; color: #999; padding-top: 10px;}
+.vc-main-events.vc-ev-media{width: 100%; background: #edeff1; margin-top: 70px;}
+.vc-main-events.vc-ev-media .vc-ev-media-box{width: 1400px; margin: auto; padding-top: 70px; position: relative; padding-bottom: 120px;}
+.vc-main-events.vc-ev-media ul{margin-left: -40px; margin-right: -40px;}
+.vc-main-events.vc-ev-media ul li{width: 33.3333%;}
+.vc-main-events.vc-ev-media ul li .vc-me-mediabox{display: block; position: relative; margin: 0 40px; color: #999;}
+.vc-main-events.vc-ev-media ul li a{display: block; position: relative; margin: 0; color: #999; height: auto;}
+.vc-main-events.vc-ev-media ul li strong{margin: 0 40px; position: relative;}
+.vc-main-events.vc-ev-media ul li strong a{display: block; margin: 0; overflow: inherit; line-height: 1em; cursor: default;}
+.vc-main-events.vc-ev-media ul li strong a:before{width: 21px; height: 18px; margin-right: 10px; vertical-align: -4px;}
+.vc-main-events.vc-ev-media ul li.v_kongjian strong a:before{ background-position: -388px -183px;}
+.vc-main-events.vc-ev-media ul li.v_sina strong a:before{ background-position: -432px -184px;}
+.vc-main-events.vc-ev-media ul li.v_weixin strong a:before{ background-position: -567px -184px;}
+.vc-main-events.vc-ev-media ul li .vc-me-mediabox .cont{font-size: 14px; color: #666; line-height: 1.2em; text-align: left; height: 6.2em; overflow: hidden;}
+.vc-main-events.vc-ev-media ul li .vc-me-mediabox .cont h3{font-size: 16px; color: #000;}
+.vc-main-events.vc-ev-media ul li .vc-me-mediabox .cont p{display: block; color: #666; overflow: hidden; padding-top: .5em; height: 4em; line-height: 1.4em;  -webkit-transition: color .3s cubic-bezier(.73, .03, .31, 1); -moz-transition: color .3s cubic-bezier(.73, .03, .31, 1); transition: color .3s cubic-bezier(.73, .03, .31, 1);}
+.vc-main-events.vc-ev-media ul li .vc-me-mediabox .cont p:hover{color: #333;}
+.vc-main-events.vc-ev-media ul li .vc-me-mediabox  .figure{position: relative; width: 125px;height: 105px; float: right; margin-left: 1em;}
+
+
+
+
+/*contain*/
+/*<!--[if lte IE 7]>*/
+.vc-main-promos ul li{*display: inline; *zoom:1; *width: 33.33333%;}
+/*<![endif]-->*/
+/*--------main---------*/

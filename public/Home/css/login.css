@@ -1,0 +1,827 @@
+﻿*{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+html{overflow-x:hidden; overflow-y:auto; color:#000; background:#fff;}
+body{font-family:"Microsoft YaHei","tahoma"; font-size:75%; -webkit-font-smoothing: antialiased;}
+a{color:#999; text-decoration:none; cursor:pointer; outline: 0 none;}
+a:hover{
+	text-decoration:none;
+	color: #008cd6;
+}
+a.v_dark_btn:hover{
+	text-decoration:none;
+	color: #fff;
+}
+a:focus{-moz-outline-style:none; border:0px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0; padding:0;}
+ol,li,ul,dl,dt,dd{list-style:none;}
+fieldset,img{border:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+table{border-collapse:collapse; border-spacing:0;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select,button{font-family:inherit; font-size:inherit; font-weight:inherit; outline-style:none; outline-width:0pt; resize:none; padding: 0; margin: 0;}
+b,em,i{display:inline-block; vertical-align:middle; font-weight:normal; font-style:normal;}
+
+
+
+/*public star*/
+
+.hide_out ul li{
+	display: block; 
+	position: relative; 
+	margin-bottom: 10px;
+	/*overflow: hidden;*/
+	border: solid 1px #fff;
+
+}
+.hide_out ul li.li_input{
+	/*border: solid 1px #f5f5f5;
+	background: #f5f5f5;*/
+	background: #e0e0e0;
+	position: relative;
+}
+/*输入框*/
+input.v_inp,.pwdPlaceholder{
+	/*padding: 10px 40px; */
+	height: 28px; 
+	line-height: 28px; 
+	width: 271px;
+	vertical-align: middle;
+	background: none;
+	/*background: green;*/
+	border: none; 
+	font-size: 16px; 
+	color: #333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px; 
+
+/*	-webkit-box-shadow: 0 0 5px rgba(0,140,214,0) , 0 1px 2px rgba(0,0,0,.1) inset; 
+	-moz-box-shadow: 0 0 5px rgba(0,140,214,0) , 0 1px 2px rgba(0,0,0,.1) inset; 
+	-o-box-shadow: 0 0 5px rgba(0,140,214,0) , 0 1px 2px rgba(0,0,0,.1) inset; 
+	box-shadow: 0 0 5px rgba(0,140,214,0) , 0 1px 2px rgba(0,0,0,.1) inset; 
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;*/
+
+	/*border: solid 1px red;*/
+	overflow: hidden;
+	padding: 10px 40px;
+	padding: 10px 0px\9;
+	/*margin:0 auto\9;*/
+	margin-left: 40px\9;
+	display: block;
+}
+
+/*输入框获得焦点时的样式*/
+input.v_inp:focus{
+/*	-webkit-box-shadow: 0 0 5px rgba(0,140,214,.5) , 0 0 2px rgba(0,0,0,.1) inset; 
+	-moz-box-shadow: 0 0 5px rgba(0,140,214,.5) , 0 0 2px rgba(0,0,0,.1) inset; 
+	-o-box-shadow: 0 0 5px rgba(0,140,214,.5) , 0 0 2px rgba(0,0,0,.1) inset; 
+	box-shadow: 0 0 5px rgba(0,140,214,.5) , 0 0 2px rgba(0,0,0,.1) inset; */
+	/*background: #fff;*/
+}
+
+
+/*提交/注册/登录大按钮*/
+.sulong_btn{
+	margin:0;
+	padding: 0;
+	width: 100%; 
+	height: 48px; 
+	line-height: 48px; 
+	overflow: hidden; 
+	text-align: center;
+	vertical-align: middle;
+	border: none; 
+	font-size: 18px; 
+	color: #fff; 
+	display: inline-block; 
+	cursor:pointer; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px; 
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;
+}
+
+/*输入框内左边小图标*/
+.hide_out ul li em{
+	width: 20px; 
+	height: 20px; 
+	overflow: hidden; 
+	position: absolute; 
+	top: 15px; 
+	left: 12px;
+	/*border: solid 1px red;*/
+}
+
+/*输入框内右边小图标*/
+.hide_out li b{
+	width: 20px; 
+	height: 20px; 
+	overflow: hidden; 
+	position: absolute; 
+	top: 15px; 
+	right: 12px;
+	_right: 30px;
+	display: none;
+
+
+}
+.hide_out ul li b,
+.hide_out ul li em,
+.other-method ul li a b{
+	background: url(../images/vivo-loginreg-ico.png) no-repeat;
+}
+/*单选样式*/
+ .radio-style{
+	width: 28px; 
+	height: 28px;
+	margin-left: 6px; 
+	margin-bottom: 10px;
+	vertical-align: -webkit-baseline-middle;
+	vertical-align: -moz-middle-with-baseline;
+    line-height: 28px;
+    vertical-align: middle;
+}
+
+.label-style{
+	line-height: 28px;
+	font-size: 14px;
+	margin-right: 35px;
+	text-align: left;
+}
+
+.label-style2{
+	line-height: 28px;
+	font-size: 14px;
+	margin-right: 5px;
+	text-align: left;
+}
+/*public end*/
+
+
+
+/*轮换开始*/
+.banner_bg{
+	width: 100%;
+	position: relative;
+	padding-bottom:27%;
+	/*height:330px;*/
+	overflow: hidden;
+	background: url("../images/login-xshot-bbg.jpg") center center no-repeat; 
+	background-size: cover;
+	display: block;
+}
+.banner_bg .logo{
+	width: 302px; 
+	height: 80px; 
+	overflow: hidden; 
+	margin: 105px auto 65px;
+	display: none;
+	/*background: url(../images/logo.png) no-repeat;*/
+}
+.banner_bg p{
+	display: block;
+	margin: 0 auto; 
+	line-height: 48px; 
+	color: #fff; 
+	font-size: 26px; 
+	overflow: hidden;
+	text-align: center;
+	font-weight: 700;
+}
+
+
+
+/*内容部分*/
+.middle_box{
+	width: 570px;
+	margin:30px auto 30px;
+	overflow: hidden;
+}
+
+.hide_out{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 2px;
+}
+.hide_out .left{
+	width: 380px;
+	padding-left: 10px;
+	float: left;
+	overflow: hidden;
+}
+.hide_out .right{
+	width: 170px;
+	float: left;
+	overflow: hidden;
+}
+
+/*右边其它登录方式*/
+.hide_out .right .other-method{
+	float: right; 
+	width: 170px; 
+}
+.hide_out .right .other-method p.sub-title{
+	font-size: 14px; 
+	color: #555; 
+	margin-bottom: 15px; 
+	padding-left: 25px;
+}
+.hide_out .right .other-method ul{
+	display: block; 
+	padding-left: 25px; 
+	border-left: 1px #ededed solid;
+}
+.hide_out .right .other-method ul li{
+	display: block; 
+	position: relative; 
+	margin-bottom: 10px;
+	width: 100%;
+	height: 48px;
+}
+.hide_out .right .other-method ul li a{
+	width: 100%; 
+	height: 48px; 
+	line-height: 48px; 
+	display: inline-block; 
+	background: #f04141; 
+	color: #fff; 
+	overflow: hidden; 
+	font-size: 16px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px; 
+	-o-border-radius: 5px; border-radius: 5px; 
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;
+	}
+
+
+.hide_out .right .other-method ul li a b{
+	width: 48px; 
+	height: 48px; 
+	display: inline-block; 
+	overflow: hidden; 
+	margin-right: 13px; 
+	position: relative; 
+	top: -2px;
+	left: 0;
+
+}
+.hide_out .right .other-method ul li.sina a{
+	background: #ff7777;
+}
+.hide_out .right .other-method ul li.sina a:hover{
+	background: #f04141;
+}
+.hide_out .right .other-method ul li.sina a b{
+	background-position: -42px 0; 
+	border-right: 1px #f57272 solid;
+}
+.hide_out .right .other-method ul li.tencent a{
+	background: #33bae7;
+}
+.hide_out .right .other-method ul li.tencent a:hover{
+	background: #10aadd;
+}
+.hide_out .right .other-method ul li.tencent a b{
+	background-position: -42px -48px; 
+	border-right: 1px #31b3de solid;
+}
+.hide_out .right .other-method ul li.qq a{
+	background: #5ca3e1;
+}
+.hide_out .right .other-method ul li.qq a:hover{
+	background: #3686cc;
+}
+.hide_out .right .other-method ul li.qq a b{
+	background-position: -42px -96px; 
+	border-right: 1px #589cd8 solid;
+}
+
+.hide_out .right .other-method ul li.vivoserver a{
+	background: #3fcef0;
+}
+.hide_out .right .other-method ul li.vivoserver a b{
+	background-position: -92px -96px; 
+	border-right: 1px #35c1e3 solid;
+}
+
+.hide_out .right .other-method ul li.wechat a{
+	background: #47C90E;
+}
+.hide_out .right .other-method ul li.wechat a:hover{
+	background: #00A200;
+}
+.hide_out .right .other-method ul li.wechat a b{
+	background-position: -101px -155px; 
+	border-right: 1px #3AB500 solid;
+}
+.hide_out .right .other-method ul li.renren a{
+	background: #6a9bec;
+}
+.hide_out .right .other-method ul li.renren a:hover{
+	background: #4380e6;
+}
+.hide_out .right .other-method ul li.renren a b{
+	background-position: -42px -144px; 
+	border-right: 1px #6695e3 solid;
+}
+
+
+/*右边其它登录方式end*/
+
+/*登录*/
+.hide_out .left .fieldset-section{
+	background: #fff;
+}
+
+.hide_out p.sub-title{
+	width: 355px; 
+	font-size: 14px; 
+	color: #555; 
+	margin: 0 auto 15px;
+	overflow: hidden;
+}
+.hide_out .left ul{
+	display: block; 
+	margin-right: 25px;
+}
+
+.hide_out li.username em{
+	background-position: 0 0;
+}
+.hide_out li.psw em{
+	background-position: 0 -20px;
+}
+
+/*输入框内右边小图标*/
+
+.hide_out ul li b.correct{
+	background-position: -20px 0;
+}
+.hide_out ul li b.error{
+	background-position: -20px -20px;
+}
+
+
+
+/*错误提示框*/
+.hide_out ul li p.tip{
+	font-size: 14px; 
+	padding-top: 4px; 
+	color: #f04141;
+	display: none;
+	background: #fff;
+}
+
+/*登录按钮*/
+.hide_out ul li.login-btn,.form-btn{
+	margin-bottom: 20px; 
+	padding-top: 10px;
+}
+
+
+
+.hide_out .left ul.slogin li.forgot{
+	font-size: 14px; 
+	color: #999;
+}
+.hide_out .left ul.slogin li.forgot .v_checkbox{
+	margin-right: 5px; 
+	top: -1px;	
+	font-size: 14px;
+}
+.v_checkbox{
+	display: inline-block; 
+	vertical-align: middle; 
+	position: relative;
+}
+.v_checkbox .remember{
+	display: block;
+	background:url(../images/vivo-fieldset-ico.png) no-repeat;
+}
+.v_checkbox .remember{
+	width: 18px; 
+	height: 18px; 
+	line-height: 18px;
+	overflow: hidden; 
+	display: inline-block;
+	background-position:-88px 0; 
+	margin-right: 5px;
+	margin-top: 0px;
+	float: left;
+}
+
+.v_dark_btn{
+	background: #008cd6; 
+}
+
+.v_dark_btn:hover{
+	background: #00aaff;
+}
+.hide_out .left ul.slogin li.forgot a.forgot-pwd{
+	position: absolute; 
+	right: 0; 
+	_right: 15px;
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;
+	line-height: 18px;
+	font-size: 14px;
+}
+.hide_out .left ul.slogin li.forgot a.forgot-pwd:hover{
+	color: #008cd6;
+}
+
+
+
+/*登录结束*/
+
+/*绑定帐号*/
+#switch{
+	width: 355px;
+	margin: 25px auto 25px;
+	overflow: hidden;
+}
+div.btns a{
+	display: block;
+	width: 48%;
+	color: #FFFFFF;
+	background-color: #CCCCCC;
+	border-radius: 3px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	text-align: center;
+}
+div.btns a.founds{
+	background-color: #cce8f7;
+	color: #008cd6;
+}
+
+.founds{
+	float: left;
+}
+.helis{
+	float: right;
+}
+
+#helis-form{
+	display: none;
+}
+
+.v_light_btn{
+	background: #7fc5ea; 
+}
+.v_light_btn:hover{
+	background: #99dff7; 
+	color: #fff;
+}
+.v_light_btn:active{
+	background: #99dff7; 
+	color: #fff;
+}
+.code-box{
+	width: 75px; 
+	height: 48px;
+	border: solid 1px #f5f5f5; 
+	background: #f5f5f5;
+	display: inline-block; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px; 
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;
+	position: absolute;
+	top: 0;
+	right: 60px;
+}
+
+.code-box2{
+	width: 75px; 
+	height: 48px;
+	border: solid 1px #f5f5f5; 
+	background: #f5f5f5;
+	display: inline-block; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px; 
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;
+	position: absolute;
+	top: 0;
+	right: 100px;
+}
+
+.code-box img{
+	display: block;
+}
+.hide_out ul.emailregister li.vercode .v_inp{
+	width: 100px;
+	margin-right:9px;
+}
+.hide_out ul.emailregister li.vercode b.correct{
+	right: 188px;
+}
+.change-code{
+	/*display: inline-block;*/
+	/*margin-left: 110px;*/
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+
+/*手机号码注册*/
+
+.hide_out ul.phoneregister li.phonenumber em{
+	background-position: 0 -40px;
+}
+
+.hide_out ul.phoneregister li.vercode .v_inp{
+	display:block;
+	width: 140px;
+	/*background: blue;*/
+	
+}
+.hide_out ul.phoneregister li.vercode b{
+	right: 138px;
+}
+
+.hide_out ul.emailregister li.vercode b{
+	right: 178px;
+}
+/*验证码*/
+#belaybar{
+	padding: 0;
+	margin:0;
+	width: 116px; 
+	height: 48px;
+	border: none; 
+	background: #008cd6;
+	font-size: 18px; 
+	color: #fff; 
+	/*display: inline-block; */
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px; 
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;
+	/*float: right;*/
+	position: absolute;
+	right: 0px;
+	top: 2px;
+}
+
+
+
+.hide_out .left ul.phoneregister li.vercode em{
+	background-position: 0 -60px;
+}
+.hide_out .left ul.emailregister li.vercode em{
+	background-position: 0 -60px;
+}
+.hide_out .mid-box ul.phoneregister li.vercode em{
+	background-position: 0 -60px;
+}
+.hide_out .mid-box ul.emailregister li.vercode em{
+	background-position: 0 -60px;
+}
+.hide_out .left ul.phoneregister li.psw em{
+	background-position: 0 -20px;
+}
+
+/*手机号码注册结束*/
+/*邮箱注册*/
+.hide_out ul.emailregister{
+	display: none;
+}
+.hide_out .left ul.emailregister li.email em{
+	background-position: 0 -80px;
+}
+
+/*邮箱注册结束*/
+
+
+/*找回密码*/
+
+.mid-box{
+	width: 351px;
+	margin: 0 auto;
+}
+
+
+
+/*发送邮件成功、失败*/
+.messagetxt{
+	color: #008AD5;
+	line-height: 50px;
+}
+.info{
+	font-size: 30px;
+
+}
+.activate-email{
+	font-size: 30px;
+	color: orange;
+}
+.activate-email:hover{
+	text-decoration: underline;
+}
+
+
+
+/*选择密保问题*/
+#select1{
+	color:red; 
+	position:relative; 
+	margin-bottom:10px;
+}
+
+/*.select-ico{
+	display:inline-block;
+	background: url(../images/select-ico.png) no-repeat center;
+	width: 40px;
+	height: 48px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor:pointer;
+}*/
+/*.select-ico:hover{
+	border-left: solid 1px #fff;
+	background: #def2fc url(../images/select-ico.png) no-repeat center;;
+}
+
+.select-ico:hover{
+	border-left: solid 1px #fff;
+	background: #def2fc url(../images/select-ico.png) no-repeat center;;
+}*/
+
+.select-ico{
+	display:inline-block;
+	background: url(../images/select-ico.png) no-repeat 318px center;
+	width: 100%;
+	height: 48px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor:pointer;
+	/*border: solid 1px red;*/
+}
+#select1 .select-ul{
+	display:none;
+	width:100%;
+	background: #f5f5f5;
+	z-index: 1000;
+	overflow: hidden;
+}
+#select1 ul.select-ul li{ 
+	margin: 0;
+	padding: 0;
+	line-height: 35px;
+	cursor:pointer;
+	padding-left:40px;
+	z-index: 1000;
+	color: #000;
+	font-size: 14px;
+	border-top: solid 1px #fff;
+}
+#select1 ul.select-ul li:hover{
+	background: #fff;
+}
+#phone-way,#select1{
+	display: none;
+}
+
+/*成功提示页面*/
+.succe-messagetxt{
+	color: #008AD5;
+	line-height: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+.succe_bg{
+	width: 100%;
+	height: 275px;
+	background: url(../images/vivo-logreg-complete3.jpg) center center no-repeat ;
+
+}
+.login-skip{
+	display: block;
+	width: 179px;
+	height: 38px;
+	line-height: 38px; 
+	margin:0;
+	padding: 0;
+	margin: 0 auto 20px;
+	overflow: hidden; 
+	text-align: center;
+	vertical-align: middle;
+	border: none; 
+	font-size: 18px; 
+	color: #fff; 
+	cursor:pointer; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px; 
+	-webkit-transition:all .3s ease-in-out; 
+	-moz-transition:all .3s ease-in-out; 
+	-o-transition:all .3s ease-in-out; 
+	transition:all .3s ease-in-out;
+	background: #008cd6; 
+}
+
+.login-skip:hover{
+	background: #00aaff;
+	color: #fff;
+}
+/*.binding{
+	width: 570px;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	margin: 20px auto;
+	border: solid 1px red;
+}*/
+
+
+/*-----------------------------------------------------------------------------------*/
+.tip-warp{
+	width: 1000px;
+	margin: 20px auto 30px;
+	overflow: auto;
+	color: #8e8a87;
+}
+.tip-bg{
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	padding-left: 33px;
+	color: #f7520e;
+	float: left;
+	background: url(../images/prompt-ico.png) no-repeat center left;
+}
+.tip-word{
+	width: 900px;
+	float: left;
+	font-size: 16px;
+	line-height: 30px;
+}
+.ignore-warp{
+	font-size: 16px;
+	padding-top: 10px;
+}
+.ignore-bt{
+	display: inline-block;
+	color: #f7520e;
+	text-align: center;
+	width: 96px;
+	height: 30px;
+	font-size: 16px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	background: #eaeaea;
+}
+.ignore-bt:hover{
+	background: #efefef;
+	cursor: pointer;
+	
+}
+.check-item {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.text-green {
+	color: #008cd6;
+}

@@ -1,0 +1,18 @@
+﻿
+
+
+
+#guoqing{width: 100%; margin: auto; height: 80px; position: absolute; top: 0; overflow: hidden; z-index: -1;}
+#guoqing .dw-box{width: 1440px; height: 100%; position: relative; margin: auto;}
+#guoqing .dw-box img{width: auto; height: 100%; position: relative; left: -80px; }
+a.vivo-h-logo{filter:alpha(opacity=0); opacity: 0;}
+
+
+@media screen and (max-width:1420px){
+    #guoqing .dw-box{width: 100%; left: 1em;}
+}
+@media screen and (max-width:900px){
+    #guoqing{ display: none;}
+    a.vivo-h-logo{filter:alpha(opacity=100); opacity: 1;}
+}
+
